@@ -8,32 +8,25 @@ do {
 } while (contraseñaUsuario != contraseña);
 
 
-function sueldoGuiones (a) {
-    let resultado = a * 500;
-    return resultado
-}
+let sueldoGuiones = a => a * 500;
 
 let cantidadDeGuiones= prompt("ingrese cantidad de guiones corregidos:");
-
 
 let guionesTotal = sueldoGuiones(cantidadDeGuiones);
 
 
 
-function sueldoTemas (b) {
-    let resultado = b * 400;
-    return resultado
-}
+let sueldoTemas = b => b * 400;
 
 let cantidadDeTemas= prompt("ingrese cantidad de temas propuestos:");
 
-
 let temasTotal = sueldoTemas(cantidadDeTemas);
 
-console.log("el total por los guiones corregidos es: ")
-console.log (guionesTotal)
-console.log("el total por los temas propuestos es: ")
-console.log (temasTotal)
+console.log("el total por los guiones corregidos es: ");
+console.log (guionesTotal);
+
+console.log("el total por los temas propuestos es: ");
+console.log (temasTotal);
 
 
 function sumaTotales (a,b) {
@@ -48,9 +41,9 @@ console.log(sueldoTotal)
 
 
 if (sueldoTotal > 80000) {
-    alert("el pago total de este mes es de " + sueldoTotal + " y se abonará con transferencia");
+    alert("el pago total de este mes es de " + sueldoTotal + " y se abonará tanto con efectivo como con transferencia");
 }  else if (sueldoTotal <= 80000 && sueldoTotal > 40000) {
-    alert("el pago total de este mes es de " + sueldoTotal + " y se abonará en efectivo y con transferencia");}
+    alert("el pago total de este mes es de " + sueldoTotal + " y se abonará con transferencia");}
     else {
     alert("el pago total de este mes es de " + sueldoTotal + " y se abonará en efectivo")
 }; 
