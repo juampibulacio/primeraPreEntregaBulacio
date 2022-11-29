@@ -22,12 +22,6 @@ let cantidadDeTemas= prompt("ingrese cantidad de temas propuestos:");
 
 let temasTotal = sueldoTemas(cantidadDeTemas);
 
-console.log("el total por los guiones corregidos es: ");
-console.log (guionesTotal);
-
-console.log("el total por los temas propuestos es: ");
-console.log (temasTotal);
-
 
 function sumaTotales (a,b) {
     let resultado = a + b;
@@ -35,9 +29,6 @@ function sumaTotales (a,b) {
 }
 
 let sueldoTotal = sumaTotales(guionesTotal, temasTotal);
-
-console.log("el pago total de este mes es de: ")
-console.log(sueldoTotal)
 
 
 if (sueldoTotal > 80000) {
